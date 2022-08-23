@@ -59,9 +59,19 @@
   --team-card-bg: #fff;
 }
 
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
 body{
   background: var(--body-bg);
   font-family: var(--font-name);
+}
+.container{
+  width: 100%;
+  padding: 0 2rem;
+  margin: auto;
 }
 a{
   text-decoration: none;
