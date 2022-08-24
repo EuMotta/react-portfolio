@@ -43,3 +43,8 @@
     left: 0;
     z-index: 999;
 }
+.logo img{
+    
+    display: flex;
+    align-items: center;
+}

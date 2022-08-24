@@ -1,5 +1,6 @@
 import React from 'react'
 import './header.css'
+import mylogo from '../../assets/Logo/jam.png'
 
 const nav_links = [
   {
@@ -28,7 +29,7 @@ const header = () => {
     <header className='header'>
       <div className="container">
         <nav className="nav_bar">
-          <div className="logo"><h2>José Antonio</h2></div>
+          <div className="logo"><img src={mylogo} alt="" /></div>
           {/* Barra de navegação */}
           <div className="navigation">
             <ul className="menu">
