@@ -24,7 +24,7 @@ const nav_links = [
     display: "Contact",
   }
 ]
-const header = () => {
+const header = ({ theme, troggleTheme }) => {
   return (
     <header className='header'>
       <div className="container">
@@ -45,8 +45,18 @@ const header = () => {
           </div>
           {/* lightmode */}
           <div className="light_mode">
-            <span>
-            <i class="ri-sun-line"></i>LightMode
+            <span onClick={troggleTheme}>
+              {
+                theme === "light-theme" ? (
+                  <span style={{color:"dark"}}>
+                    <i class="ri-moon-fill"></i>DarkMode
+                  </span>
+                ) : (
+                  <span>
+                    <i class="ri-sun-line"></i>LightMode
+                  </span>
+                )
+              }
             </span>
           </div>
           {/* login */}
