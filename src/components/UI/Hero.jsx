@@ -10,7 +10,7 @@ const Hero = ({ theme }) => {
   const [delta, setDelta] = useState(300 - Math.random() * 100)
   const [index, setIndex] = useState(1)
   const period = 1500
-  const toRotate = ["frase1", "frase2", "frase3", "fraaaaaaaaaaaaaaase"]
+  const toRotate = ["José Antonio Motta", "programador ", "Front / Back-end", "grato a sua visita!"]
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
@@ -43,13 +43,13 @@ const Hero = ({ theme }) => {
     <section className="hero_section">
       <div className="container">
         <div className="hero_wrapper">
-          <div className="hero_content">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing.</h2>
-            <h2>{`Eu sou `}<span className="highlight " dataPeriod="500" data-rotate='["frase1", "frase2", "frase3", "fraaaaaaaaaaaaaaase"]'>
+          <div className="hero_content ">
+            <h2 className='pb-15'>Olá, seja bem-vindo ao meu portfólio</h2>
+            <h2>{`Eu sou `}<span className="highlight " dataPeriod="500" data-rotate='["José Antonio Motta", "programador ", "Front / Back-end", "grato a sua visita!"]'>
               <span className='txt-rotate'>{text}</span>
             </span>
             </h2>
-            <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vel consequatur maiores enim est iusto.</p>
+            <p className="description">Conheça um pouco mais sobre mim, meus projetos, linguagens mais usadas e produtos.</p>
             <div className="hero_btns">
               <button className="primary_btn">GitHub</button>
               <button className="secondary_btn">LinkedIn</button>

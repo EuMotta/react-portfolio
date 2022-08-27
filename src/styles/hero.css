@@ -71,3 +71,6 @@
 .txt-rotate{
     color: var(--primary-color)!important;
 }
+.pb-15{
+    margin-top: 2rem;
+}

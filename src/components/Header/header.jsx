@@ -48,7 +48,7 @@ const header = ({ theme, troggleTheme }) => {
             <span onClick={troggleTheme}>
               {
                 theme === "light-theme" ? (
-                  <span style={{color:"dark"}}>
+                  <span className='dark-theme'>
                     <i class="ri-moon-fill"></i>DarkMode
                   </span>
                 ) : (

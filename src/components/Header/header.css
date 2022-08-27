@@ -13,6 +13,7 @@
     align-items: center;
     column-gap: 2.5rem;
     list-style: none;
+    user-select: none;
 }
 .menu_item{
     font-weight: 400;
@@ -33,6 +34,11 @@
     align-items: center;
     column-gap: 0.4rem;
     font-size: 0.9rem;
+    cursor: pointer;
+    user-select: none;
+}
+.dark-theme{
+    color: rgb(0, 0, 0) !important;
 }
 .header_shrink{
     width: 100%;
