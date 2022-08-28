@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.css'
-import mylogo from '../../assets/Logo/jam.png'
+import mylogo from '../../assets/Logo/jam.svg'
 import moon from '../../assets/icons/moon.svg'
 import sun from '../../assets/icons/sun.svg'
 

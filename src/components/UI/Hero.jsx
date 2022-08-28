@@ -43,9 +43,12 @@ const Hero = ({ theme }) => {
     <section className="hero_section">
       <div className="container">
         <div className="hero_wrapper">
+          <div className="hero_img">
+            <img src={theme === "light-theme" ? LightHero : imghero} alt="" />
+          </div>
           <div className="hero_content ">
             <h2 className='pb-15'>Olá, seja bem-vindo ao meu portfólio</h2>
-            <h2>Eu sou <span className='name_style'>José Antonio Motta.</span>{'\n'}<span className="highlight " dataPeriod="500" data-rotate='["Programador Front / Back-end", "Desenvolvedor Web ", "Grato a sua visita!"]'>
+            <h2>Eu sou <span className='name_style'>José Antonio Motta.</span><br /><span className="highlight " dataPeriod="500" data-rotate='["Programador Front / Back-end", "Desenvolvedor Web ", "Grato a sua visita!"]'>
               <span className='txt-rotate'>{text}</span>
             </span>
             </h2>
@@ -54,9 +57,6 @@ const Hero = ({ theme }) => {
               <button className="primary_btn">GitHub</button>
               <button className="secondary_btn">LinkedIn</button>
             </div>
-          </div>
-          <div className="hero_img">
-            <img src={theme === "light-theme" ? LightHero : imghero} alt="" />
           </div>
         </div>
       </div>
