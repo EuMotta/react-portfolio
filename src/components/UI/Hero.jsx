@@ -10,7 +10,7 @@ const Hero = ({ theme }) => {
   const [delta, setDelta] = useState(300 - Math.random() * 100)
   const [index, setIndex] = useState(1)
   const period = 1500
-  const toRotate = ["José Antonio Motta", "programador ", "Front / Back-end", "grato a sua visita!"]
+  const toRotate = ["Programador Front / Back-end", "Desenvolvedor Web ", "Grato a sua visita!"]
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
@@ -45,7 +45,7 @@ const Hero = ({ theme }) => {
         <div className="hero_wrapper">
           <div className="hero_content ">
             <h2 className='pb-15'>Olá, seja bem-vindo ao meu portfólio</h2>
-            <h2>{`Eu sou `}<span className="highlight " dataPeriod="500" data-rotate='["José Antonio Motta", "programador ", "Front / Back-end", "grato a sua visita!"]'>
+            <h2>Eu sou <span className='name_style'>José Antonio Motta.</span>{'\n'}<span className="highlight " dataPeriod="500" data-rotate='["Programador Front / Back-end", "Desenvolvedor Web ", "Grato a sua visita!"]'>
               <span className='txt-rotate'>{text}</span>
             </span>
             </h2>

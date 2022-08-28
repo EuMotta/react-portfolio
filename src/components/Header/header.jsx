@@ -1,6 +1,8 @@
 import React from 'react'
 import './header.css'
 import mylogo from '../../assets/Logo/jam.png'
+import moon from '../../assets/icons/moon.svg'
+import sun from '../../assets/icons/sun.svg'
 
 const nav_links = [
   {
@@ -44,16 +46,16 @@ const header = ({ theme, troggleTheme }) => {
             </ul>
           </div>
           {/* lightmode */}
-          <div className="light_mode">
+          <div className="light_mode icons_lightmode">
             <span onClick={troggleTheme}>
               {
                 theme === "light-theme" ? (
                   <span className='dark-theme'>
-                    <i class="ri-moon-fill"></i>DarkMode
+                    <img style={{width:'1.7rem'}} src={moon} alt="" />
                   </span>
                 ) : (
                   <span>
-                    <i class="ri-sun-line"></i>LightMode
+                    <img style={{width:'2.5rem'}} src={sun} alt="" />
                   </span>
                 )
               }
