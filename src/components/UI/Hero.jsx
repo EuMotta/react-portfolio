@@ -48,7 +48,7 @@ const Hero = ({ theme }) => {
           </div>
           <div className="hero_content ">
             <h2 className='pb-15'>Olá, seja bem-vindo ao meu portfólio</h2>
-            <h2>Eu sou <span className='name_style'>José Antonio Motta.</span><br /><span className="highlight " dataPeriod="500" data-rotate='["Programador Front / Back-end", "Desenvolvedor Web ", "Grato a sua visita!"]'>
+            <h2>Eu sou <span className='name_style'>José Antonio Motta.</span><br />ﾠ<span className="highlight " dataPeriod="500" data-rotate='["Programador Front / Back-end", "Desenvolvedor Web ", "Grato a sua visita!"]'>
               <span className='txt-rotate'>{text}</span>
             </span>
             </h2>
