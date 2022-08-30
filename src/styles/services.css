@@ -1,5 +1,5 @@
 #services{
-
+    
 }
 .services_top-content{
     text-align: center;
@@ -16,6 +16,7 @@
     cursor: pointer;
     height: 350px;
 }
+
 .services-icon{
     display: flex;
     justify-content: center;
@@ -42,7 +43,4 @@
     align-items: center;
     justify-content: space-between;
     column-gap: 2rem;
-}
-.container-card{
-
 }
