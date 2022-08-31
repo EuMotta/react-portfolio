@@ -45,8 +45,9 @@ const About = () => {
                     <span className="choose_me-icon">
                       <i className={item.icon}></i>
                     </span>
-                    <h4 className="choose_me-title">{item.title}</h4>
+                    <h4 className="choose_me-title">{item.title}
                     <p className="description">{item.desc}</p>
+                    </h4>
                   </div>
                 ))
               }
