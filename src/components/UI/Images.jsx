@@ -14,7 +14,7 @@ import img10 from '../../assets/img/img (10).png'
 
 const Images = () => {
     return (
-        <section id='carousel' className="me_carousel">
+        <section id='images' className="me_carousel">
             <div className="container">
                 <div className="carousel_content">
                     <h6 className="subtitle">Carousel</h6>

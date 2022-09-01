@@ -40,7 +40,7 @@ const Hero = ({ theme }) => {
   }
 
   return (
-    <section className="hero_section">
+    <section id='hero' className="hero_section">
       <div className="container">
         <div className="hero_wrapper">
           <div className="hero_img">

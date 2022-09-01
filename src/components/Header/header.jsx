@@ -8,7 +8,7 @@ import sun from '../../assets/icons/sun.svg'
 
 const nav_links = [
   {
-    path: "#home",
+    path: "#hero",
     display: "Home",
   },
   {
