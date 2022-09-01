@@ -29,7 +29,7 @@ const nav_links = [
   },
   {
     path: "#contact",
-    display: "Contact",
+    display: "Contato",
   }
 ]
 const Header = ({ theme, troggleTheme }) => {
