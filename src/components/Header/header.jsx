@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './header.css'
 import mylogo from '../../assets/Logo/jam.svg'
 import moon from '../../assets/icons/moon.svg'
 import sun from '../../assets/icons/sun.svg'
+
+
 
 const nav_links = [
   {
@@ -19,16 +21,43 @@ const nav_links = [
   },
   {
     path: "#projects",
-    display: "Contato",
+    display: "Projetos",
+  },
+  {
+    path: "#images",
+    display: "Imagens",
   },
   {
     path: "#contact",
     display: "Contact",
   }
 ]
-const header = ({ theme, troggleTheme }) => {
+const Header = ({ theme, troggleTheme }) => {
+  const headerRef = useRef(null)
+  const headerFunc = () => {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      headerRef.current.classList.add('header_shrink')
+    } else {
+      headerRef.current.classList.remove('header_shrink')
+    }
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', headerFunc)
+
+    return () => window.removeEventListener('scroll', headerFunc)
+
+  }, [])
+  const handleClick = e => {
+    e.preventDefault()
+    const targetAttr = e.target.getAttribute('href')
+    const location = document.querySelector(targetAttr).offsetTop
+    window.scrollTo({
+      left: 0,
+      top: location - 80,
+    })
+  }
   return (
-    <header className='header'>
+    <header className='header' ref={headerRef}>
       <div className="container">
         <nav className="nav_bar">
           <div className="logo"><img src={mylogo} alt="" /></div>
@@ -37,8 +66,8 @@ const header = ({ theme, troggleTheme }) => {
             <ul className="menu">
               {
                 nav_links.map((item, index) => (
-                  <li className="menu_item">
-                    <a href={item.path} className="menu_index">
+                  <li className="menu_item" key={index}>
+                    <a href={item.path} onClick={handleClick} className="menu_index">
                       {item.display}
                     </a>
                   </li>
@@ -51,11 +80,11 @@ const header = ({ theme, troggleTheme }) => {
               {
                 theme === "light-theme" ? (
                   <span className='dark-theme'>
-                    <img style={{width:'1.7rem'}} src={moon} alt="" />
+                    <img style={{ width: '1.7rem' }} src={moon} alt="" />
                   </span>
                 ) : (
                   <span>
-                    <img style={{width:'2.5rem'}} src={sun} alt="" />
+                    <img style={{ width: '2.5rem' }} src={sun} alt="" />
                   </span>
                 )
               }
@@ -69,4 +98,4 @@ const header = ({ theme, troggleTheme }) => {
   )
 }
 
-export default header
+export default Header

@@ -102,3 +102,6 @@
         transform: translateY(-5px);
     }
 }
+.writer{
+    row-gap: 1rem;
+}

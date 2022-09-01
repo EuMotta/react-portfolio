@@ -36,6 +36,7 @@
   --font-name: "Roboto", sans-serif;
   --small-text-color: rgba(255, 255, 255, 0.774);
   --icon-bg:#151e4f;
+  --shrink-bg:#0c123d;
 }
 
 .light-theme {
@@ -58,12 +59,14 @@
   --card-bg:#fff;
   --testimonial-bg: #f7f7f7;
   --team-card-bg: #fff;
+  --shrink-bg:#d9d2ff;
 }
 
 *{
   padding: 0;
   box-sizing: border-box;
   margin: 0;
+  scroll-behavior: smooth;
 }
 body{
   background: var(--body-bg);
