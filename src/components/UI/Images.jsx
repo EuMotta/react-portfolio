@@ -23,13 +23,13 @@ const Images = () => {
                 <div className="carousel_wrapper">
                     <div className="carousel_item">
                         <div className="carousel_img">
-                            <Carousel
-                                slidesToShow={2}
+                            <Carousel className='carousel'
+                                slidesToShow={3}
                                 pauseOnHover
                                 wrapAround={true}
                                 autoplay={true}
                                 adaptiveHeightAnimation={true}
-                                style={{height:'40rem'}}>
+                                style={{height:'30rem'}}>
                                 <img src={img1} alt="" />
                                 <img src={img2} alt="" />
                                 <img src={img3} alt="" />
