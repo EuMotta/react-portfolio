@@ -32,7 +32,7 @@ const nav_links = [
     display: "Contact",
   }
 ]
-const home = ({ theme, troggleTheme }) => {
+const Home = ({ theme, troggleTheme }) => {
   const homeRef = useRef(null)
   const homeFunc = () => {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -98,4 +98,4 @@ const home = ({ theme, troggleTheme }) => {
   )
 }
 
-export default home
+export default Home

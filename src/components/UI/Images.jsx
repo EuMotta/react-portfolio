@@ -24,14 +24,15 @@ const Images = () => {
                     <div className="carousel_item">
                         <div className="carousel_img">
                             <Carousel
-                            cellSpacing={50}
+                            cellSpacing={0}
                              className='carousel'
-                                slidesToShow={3}
+                                slidesToShow={4}
                                 pauseOnHover
                                 wrapAround={true}
                                 autoplay={true}
+                                autoplayInterval={4000}
                                 adaptiveHeightAnimation={true}
-                                style={{height:'30rem'}}>
+                                style={{height:'25rem'}}>
                                 <img src={img1} alt="" />
                                 <img src={img2} alt="" />
                                 <img src={img3} alt="" />
