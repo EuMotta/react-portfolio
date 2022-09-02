@@ -57,7 +57,7 @@ const home = ({ theme, troggleTheme }) => {
     })
   }
   return (
-    <header className='home' ref={headerRef}>
+    <home className='home' ref={headerRef}>
       <div className="container">
         <nav className="nav_bar">
           <div className="logo"><img src={mylogo} alt="" /></div>
@@ -93,7 +93,7 @@ const home = ({ theme, troggleTheme }) => {
           {/* login */}
         </nav>
       </div>
-    </header>
+    </home>
 
   )
 }
