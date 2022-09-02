@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import './header.css'
+import './home.css'
 import mylogo from '../../assets/Logo/jam.svg'
 import moon from '../../assets/icons/moon.svg'
 import sun from '../../assets/icons/sun.svg'
@@ -32,7 +32,7 @@ const nav_links = [
     display: "Contact",
   }
 ]
-const Header = ({ theme, troggleTheme }) => {
+const home = ({ theme, troggleTheme }) => {
   const headerRef = useRef(null)
   const headerFunc = () => {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -57,7 +57,7 @@ const Header = ({ theme, troggleTheme }) => {
     })
   }
   return (
-    <header className='header' ref={headerRef}>
+    <header className='home' ref={headerRef}>
       <div className="container">
         <nav className="nav_bar">
           <div className="logo"><img src={mylogo} alt="" /></div>
@@ -98,4 +98,4 @@ const Header = ({ theme, troggleTheme }) => {
   )
 }
 
-export default Header
+export default home
