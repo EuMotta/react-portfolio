@@ -1,6 +1,7 @@
 import React from 'react'
 import Marquee from 'react-fast-marquee'
 import '../../styles/services.css'
+// import video from '../../assets/video/video (1).mp4'
 
 const serviceData = [
   {

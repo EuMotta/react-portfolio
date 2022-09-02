@@ -5,3 +5,9 @@
     background-position: center center;
     width: 100%;
 }
+.container{
+    text-align: center;
+}
+.container h2{
+    padding-bottom: 20px;
+}

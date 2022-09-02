@@ -1,7 +1,7 @@
-.container .subtitle, .container .highlight, .container h2, .container .about_content-desc{
+/* .container .subtitle, .container .highlight, .container h2, .container .about_content-desc{
     text-align: center;
     margin-bottom: 20px;
-}
+} */
 .about_wrapper{
     display: flex;
     column-gap: 2rem;
