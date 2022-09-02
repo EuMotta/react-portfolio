@@ -23,7 +23,9 @@ const Images = () => {
                 <div className="carousel_wrapper">
                     <div className="carousel_item">
                         <div className="carousel_img">
-                            <Carousel className='carousel'
+                            <Carousel
+                            cellSpacing={50}
+                             className='carousel'
                                 slidesToShow={3}
                                 pauseOnHover
                                 wrapAround={true}

@@ -33,18 +33,18 @@ const nav_links = [
   }
 ]
 const home = ({ theme, troggleTheme }) => {
-  const headerRef = useRef(null)
-  const headerFunc = () => {
+  const homeRef = useRef(null)
+  const homeFunc = () => {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-      headerRef.current.classList.add('header_shrink')
+      homeRef.current.classList.add('home_shrink')
     } else {
-      headerRef.current.classList.remove('header_shrink')
+      homeRef.current.classList.remove('home_shrink')
     }
   }
   useEffect(() => {
-    window.addEventListener('scroll', headerFunc)
+    window.addEventListener('scroll', homeFunc)
 
-    return () => window.removeEventListener('scroll', headerFunc)
+    return () => window.removeEventListener('scroll', homeFunc)
 
   }, [])
   const handleClick = e => {
@@ -57,7 +57,7 @@ const home = ({ theme, troggleTheme }) => {
     })
   }
   return (
-    <home className='home' ref={headerRef}>
+    <home className='home' ref={homeRef}>
       <div className="container">
         <nav className="nav_bar">
           <div className="logo"><img src={mylogo} alt="" /></div>
