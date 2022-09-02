@@ -3,7 +3,7 @@
     
 }
 .carousel_img img{
-    margin-top: 1rem;
+    margin-top: 2rem;
     background-position: center;
     background-size: cover;
     background-position: center;
@@ -12,10 +12,29 @@
     border-radius: 2%;
     transition: 300ms;
 }
+
 .carousel_img img:hover{
-    
     transform: scale(1.02);
     cursor: pointer;
+}
+.carousel_img button{
+    background: none !important;
+    border: none !important;
+    transition: 300ms;
+    margin-right: 1.6rem;
+}
+.carousel_img i{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    box-shadow: 4px solid #fff;
+    border-radius: 50%;
+}
+.carousel_img button:hover{
+    transform: scale(1.1);
+}
+.carousel button{
+    background-color: #fff !important;
 }
 .container{
     text-align: center;

@@ -24,15 +24,26 @@ const Images = () => {
                     <div className="carousel_item">
                         <div className="carousel_img">
                             <Carousel
-                            cellSpacing={0}
-                             className='carousel'
+                                renderCenterLeftControls={({ previousSlide }) => (
+                                    <button onClick={previousSlide}>
+                                        <i className="ri-arrow-left-circle-line" />
+                                    </button>
+                                )}
+                                renderCenterRightControls={({ nextSlide }) => (
+                                    <button onClick={nextSlide}>
+                                      <i className="ri-arrow-right-circle-line"/>
+                                    </button>
+                                  )}
+                                cellSpacing={0}
+                                className='carousel'
+
                                 slidesToShow={4}
                                 pauseOnHover
                                 wrapAround={true}
                                 autoplay={true}
                                 autoplayInterval={4000}
                                 adaptiveHeightAnimation={true}
-                                style={{height:'25rem'}}>
+                                style={{ height: '25rem' }}>
                                 <img src={img1} alt="" />
                                 <img src={img2} alt="" />
                                 <img src={img3} alt="" />

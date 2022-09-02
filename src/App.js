@@ -5,6 +5,7 @@ import Hero from './components/UI/Hero'
 import Services from './components/UI/Services'
 import Images from './components/UI/Images'
 import About from './components/UI/About'
+import Footer from './components/Footer/footer'
 
 function App() {
   const [theme, setTheme] = useState("")
@@ -20,6 +21,7 @@ function App() {
     <Services />
     <Images/>
     <About />
+    <Footer />
   </>
 }
 
