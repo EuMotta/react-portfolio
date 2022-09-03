@@ -47,8 +47,11 @@ const footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="footer">
+    <footer id="footer" className="footer">
       <div className="container">
+        <div className="svg">
+          <img src="" alt="" />
+        </div>
         <div className="footer_wrapper">
           <div className="footer_logo">
             <h2>Digency</h2>
@@ -93,9 +96,10 @@ const footer = () => {
           </div>
         </div>
         <p className="copyright">
-          Copyright  {year}, desenvolvido por José Antonio Motta. Todos os direitos
+          Copyright   {year}, desenvolvido por José Antonio Motta. Todos os direitos
           reservados
         </p>
+        
       </div>
     </footer>
   );

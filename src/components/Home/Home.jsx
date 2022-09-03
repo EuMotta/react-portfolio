@@ -25,7 +25,7 @@ const nav_links = [
   },
   {
     path: "#images",
-    display: "Imagens",
+    display: "Images",
   },
   {
     path: "#contact",
@@ -56,13 +56,15 @@ const Home = ({ theme, troggleTheme }) => {
       top: location - 80,
     })
   }
+  const menuRef = useRef(null)
+  const toggleMenu = () => menuRef.current.classList.toggle('menu_active')
   return (
     <home className='home' ref={homeRef}>
       <div className="container">
         <nav className="nav_bar">
           <div className="logo"><img src={mylogo} alt="" /></div>
           {/* Barra de navegação */}
-          <div className="navigation">
+          <div className="navigation" ref={menuRef} onClick={toggleMenu}>
             <ul className="menu">
               {
                 nav_links.map((item, index) => (
@@ -90,7 +92,10 @@ const Home = ({ theme, troggleTheme }) => {
               }
             </span>
           </div>
-          {/* login */}
+          {/* mobile */}
+          <span className="mobile_menu" onClick={toggleMenu}>
+              <i className='ri-menu-line'></i>
+          </span>
         </nav>
       </div>
     </home>
