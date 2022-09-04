@@ -68,3 +68,39 @@
 .choose_me-item h4{
     font-size: 1.5rem;
 }
+@media only screen and (max-width:992px){
+    /* *{
+        transition: 300ms ease-in-out;
+    } */
+    
+    .about_content h2{
+        font-size: 1.5rem;
+    }
+    .about_wrapper{
+        flex-direction: column;
+    }
+    .about_img img{
+        display: flex;
+        position: absolute;
+        max-width: 70%;
+        z-index: -1;
+        transform: translateY(-93vh);
+        left: 14%;
+        transition-delay: 3s ease-in-out;
+        filter: blur(1px);
+        opacity: 0.6;
+    }
+    .about_img img:hover{
+
+    }
+    .about_content{
+        justify-content: center;
+        position: relative;
+        align-items: center ;
+        left: 19%;
+        width: 60%;
+    }
+}
+@media only screen and (max-width:768px){
+
+}

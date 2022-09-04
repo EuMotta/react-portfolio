@@ -17,9 +17,11 @@
 }
 .hero_content h2{
     font-size: 2rem;
+    transition: 3s ease-in-out;
 }
 .highlight span{
     font-size: 1.6rem !important;
+    
 }
 .hero_content{
     padding-top: 20px;
@@ -106,4 +108,33 @@
     row-gap: 1rem;
     text-align: left;
     padding-left: 1.6rem;
+}
+
+@media only screen and (max-width:992px){
+    .hero_content h2{
+        font-size: 1.7rem;
+        line-height: 50px; 
+    }
+}
+@media only screen and (max-width:768px){
+    .hero_content h2{
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+    .hero_content p{
+        font-size: 0.9rem;
+    }
+    .primary_btn,.secondary_btn{
+        font-size: 0.8rem;
+    }
+    .hero_content,.hero_img{
+        width: 100%;
+    }
+    .hero_img img{
+        height: 70vh;
+        top: 0;
+    }
+    .hero_content{
+        margin-top: 4rem;
+    }
 }

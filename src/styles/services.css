@@ -44,3 +44,28 @@
     justify-content: space-between;
     column-gap: 2rem;
 }
+@media only screen and (max-width:992px){
+    .services_top-content h2{
+        font-size: 1.5rem;
+    }
+    .services-item-wrapper{
+        flex-wrap: wrap;
+    }
+    .services-item{
+        width: 30%;
+        margin-bottom: 2rem;
+    }
+}
+@media only screen and (max-width:768px){
+    .services-item{
+        width: 47%;
+    }
+    .services_title{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width:605px){
+    .services-item{
+        width: 100%;
+    }
+}

@@ -12,6 +12,7 @@ import img8 from '../../assets/img/img (8).png'
 import img9 from '../../assets/img/img (9).png'
 import img10 from '../../assets/img/img (10).png'
 
+
 const Images = () => {
     return (
         <section id='images' className="me_carousel">
@@ -23,6 +24,7 @@ const Images = () => {
                 <div className="carousel_wrapper">
                     <div className="carousel_item">
                         <div className="carousel_img">
+
                             <Carousel
                                 renderCenterLeftControls={({ previousSlide }) => (
                                     <button onClick={previousSlide}>
@@ -31,13 +33,13 @@ const Images = () => {
                                 )}
                                 renderCenterRightControls={({ nextSlide }) => (
                                     <button onClick={nextSlide}>
-                                      <i className="ri-arrow-right-circle-line"/>
+                                        <i className="ri-arrow-right-circle-line" />
                                     </button>
-                                  )}
+                                )}
                                 cellSpacing={0}
                                 className='carousel'
-
-                                slidesToShow={4}
+                                
+                                slidesToShow={5}
                                 pauseOnHover
                                 wrapAround={true}
                                 autoplay={true}
