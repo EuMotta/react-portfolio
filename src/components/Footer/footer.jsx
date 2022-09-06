@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.css";
+import logo from '../../assets/Logo/jam.svg'
 
 const quickLinks01 = [
   {
@@ -54,7 +55,7 @@ const footer = () => {
         </div>
         <div className="footer_wrapper">
           <div className="footer_logo">
-            <h2>Digency</h2>
+            <img src={logo} alt="" />
             <p className="description">Trabalhe conosco</p>
             <div className="small_text description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
@@ -67,17 +68,6 @@ const footer = () => {
             <h3 className="quick_links-title">Suport</h3>
             <ul className="quick_links">
               {quickLinks01.map((item, index) => (
-                <li className="quick_link-item" key={index}>
-                  <a href={item.path}>{item.display}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="footer_quick-links">
-            <h3 className="quick_links-title">Company</h3>
-            <ul className="quick_links">
-              {quickLinks02.map((item, index) => (
                 <li className="quick_link-item" key={index}>
                   <a href={item.path}>{item.display}</a>
                 </li>

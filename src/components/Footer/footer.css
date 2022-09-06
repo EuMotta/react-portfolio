@@ -53,3 +53,36 @@
     font-size: 0.9rem;
     font-weight: 400;
 }
+.footer_logo img{
+    width: 70%;
+}
+@media only screen and (max-width:768px){
+    .footer_logo img{
+        width: 50%;
+    }
+    .footer_wrapper{
+        flex-wrap: wrap;
+        column-gap: 1.5rem !important;
+    }
+    .footer_quick-links{
+        margin-bottom: 30px;
+    }
+
+}
+@media only screen and (max-width:576px){
+    .footer_quick-links{
+        width: 100%;
+        justify-content: center;
+    }
+    .footer_wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .small_text{
+        margin-bottom: 15%;
+    }
+    .footer_logo img{
+        width: 100%;
+    }
+}
